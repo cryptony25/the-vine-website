@@ -158,6 +158,51 @@ nav a[aria-current="page"] {
   border-bottom-color: var(--color-primary);
 }
 
+/* Hidden on screen but still read aloud by screen readers. */
+.visually-hidden {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* The hamburger button only appears on small screens (see section 14). */
+.nav-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  padding: 0.5rem 0.625rem;
+}
+
+/* The icon is three bars: the element itself, plus two pseudo-elements. */
+.nav-toggle-icon,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  background-color: var(--color-primary-dark);
+  border-radius: 2px;
+  display: block;
+  height: 2px;
+  width: 22px;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  content: "";
+  position: relative;
+}
+
+.nav-toggle-icon::before {
+  top: -7px;
+}
+
+.nav-toggle-icon::after {
+  top: 5px;
+}
+
 
 /* --------------------------------------------------------------------------
    5. Page layout
@@ -452,14 +497,39 @@ footer nav a:focus {
 
   header {
     padding: var(--space-md);
+    position: relative;
   }
 
   header h1 {
     font-size: 1.5rem;
   }
 
-  nav ul {
-    gap: var(--space-md);
+  /* Show the hamburger and collapse the menu behind it. */
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: var(--space-md);
+    top: var(--space-md);
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu.is-open li {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .nav-menu.is-open a {
+    border-bottom: none;
+    display: block;
+    padding: var(--space-md) 0;
   }
 
   nav a {

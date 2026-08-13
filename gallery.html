@@ -9,6 +9,7 @@
   <meta name="description" content="See inside The Vine: the training studio, one-on-one sessions, small group training, and the clients putting in the work.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +18,12 @@
     <p>Where Growth Happens</p>
 
     <nav aria-label="Main navigation">
-      <ul>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <ul class="nav-menu" id="primary-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
