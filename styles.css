@@ -366,3 +366,61 @@ form {
   margin: 0 auto;
   max-width: 55ch;
 }
+
+
+/* --------------------------------------------------------------------------
+   12. Site footer
+   -------------------------------------------------------------------------- */
+
+footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-bg);
+  padding: var(--space-xl) var(--space-lg) var(--space-lg);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.footer-brand {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+}
+
+.footer-tagline {
+  color: var(--color-accent);
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md) var(--space-lg);
+}
+
+footer nav a {
+  color: var(--color-bg);
+  font-size: 0.9375rem;
+  text-decoration: none;
+}
+
+footer nav a:hover,
+footer nav a:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--color-accent);
+  font-size: 0.8125rem;
+  margin: var(--space-lg) auto 0;
+  max-width: var(--max-width);
+  padding-top: var(--space-md);
+}
