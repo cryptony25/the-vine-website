@@ -10,6 +10,7 @@ the trainer, and real clients as soon as possible.
 
 | File | Shows |
 | --- | --- |
+| `studio.jpg` | The Vine studio interior (branded render, not a real photo) |
 | `gallery-2.jpg` | Trainer coaching a client through a dumbbell lift |
 | `gallery-3.jpg` | Client stretching on a mat in a bright studio |
 | `gallery-4.jpg` | Rack of dumbbells along a wall |

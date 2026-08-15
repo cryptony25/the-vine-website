@@ -388,7 +388,18 @@ form {
 
 
 /* --------------------------------------------------------------------------
-   11. Home page hero
+   11. Feature image
+   A single wide photo used to break up a page.
+   -------------------------------------------------------------------------- */
+
+.feature-image img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+
+/* --------------------------------------------------------------------------
+   12. Home page hero
    -------------------------------------------------------------------------- */
 
 .hero {
@@ -414,7 +425,7 @@ form {
 
 
 /* --------------------------------------------------------------------------
-   12. Site footer
+   13. Site footer
    -------------------------------------------------------------------------- */
 
 footer {
@@ -472,7 +483,7 @@ footer nav a:focus {
 
 
 /* --------------------------------------------------------------------------
-   13. Responsive adjustments
+   14. Responsive adjustments
    Layout already reflows on its own (flex-wrap and the auto-fit gallery
    grid). These rules tighten spacing and type sizes on smaller screens.
    -------------------------------------------------------------------------- */
